@@ -6,32 +6,40 @@ Pod Cats is a social media and educational application designed for your pet cat
 
 ## Choice of API and proof of concept
 
-## ERDs
+https://api.thecatapi.com/v1/images/search?limit=10
 
+![cat api proof](./public/api.thecatapi.png)
+
+## ERDs
+![Entity Relational Diagrams](./public/project-3-erd.png)
 
 ## Restful Routing Chart
+
 #### Users
 
 | Method | URL pattern | Action | Description |
 |:------:|:-----------:|:------:|:-----------:|
-| POST   | /users | Create | Create new user |
-| GET    | /users/login | Read | Render form for users to log in |
-| POST   | /users/login | Read | Verify user login info |
-| GET    | /users/logout | Read | Log out user & user cookie id |
-| GET    | /users/new | Read | Render form for creating new User |
-| GET    | /users/profile | Read | Display User information & FREE horoscope |
-| GET    | /users/profile/account | Read | Render form for updating user information |
-| PUT    | /users/profile/account | Update | Edit/update User information |
-| DELETE | /users/profile/account | Delete | Delete User from DB |
+| POST   | /signup | Create | Create new user |
+| GET    | /login | Read | Render form for users to log in |
+| POST   | /login | Read | Verify user login info |
+| GET    | /logout | Read | Log out user and user cookie id |
+| GET    | /signup | Read | Render form for creating new User |
+| GET    | /profile | Read | Display user info and cat posts |
+| GET    | /profile/account | Read | Render form for updating user information |
+| PUT    | /profile/account | Update | Edit/update user information |
+| DELETE | /profile/account | Delete | Delete user from DB |
 
 #### Cat
 | Method | URL pattern | Action | Description |
 |:------:|:------:|:------:|:-----------:|
-| GET    | /users/:id/meditate | Read | Show 50 random quotes |
-| POST   | /users/:id/meditate | Create | Add quote(s) to user's reflect page |
+| GET    | /cats | READ | Display feed of all (recent) cat posts |
+| GET    | /cats/id/:id | READ | Display specific cat post |
+| POST    | /cats/id/:id | CREATE | Create a new cat post |
+
+
 
 ## Wireframes
-
+![Components](./public/wireframe-components.png)
 
 
 ## Userstories
