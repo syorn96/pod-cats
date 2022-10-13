@@ -66,7 +66,7 @@ https://api.thecatapi.com/v1/images/search?limit=10
 * Mongoose (Backend Server node module package)
 
 ## Wireframes
-![Components](./public/wireframe-components.png)
+![Components](./public/Wireframe.png)
 
 ## General Approach
 
@@ -77,12 +77,46 @@ During the first couple of days Stephen spent a considerable amount of time focu
 Once our server was up and running, we all worked individually and sometimes as a team to polish our components in the front end. Reaching MVP took the majority of the time alotted for this project. However, once we reached MVP, we spent the last day working together to learn integrating CSS with both Bootstrap and Tailwind packages.
 
 
-## Installation Instructions
+## Server Installation Instructions
+https://github.com/syorn96/pod-cats-server
 
-* Server: https://github.com/syorn96/pod-cats-server
+To run Pod Cats on your local machine, first fork and clone this repository. Then follow these steps:
 
+* In your terminal, navigate to the cloned repository. Run the command ```npm -install```  or  ```npm i```
+to install all of the packages needed to run the app.
 
-* Client: https://github.com/KhakiSuitValentino/pod-cats-client
+* You will need to add a gitignore file for your node modules. In your terminal in the same location as above, run the following command: ```node_modules >> .gitignore```
+* In the ```.gitignore``` file, add ```.env``` to keep environmental variables off of github
+
+* In the ```.env``` file, you need to set your ```PORT``` variable and your ```JWT_SECRET``` (this can be whatever you want). Enter the following:
+ ```
+JWT_SECRET='<whatever secret>'
+PORT=8000
+ ``` 
+
+* You're all set! run ```nodemon``` in your cloned repository and your server is ready to go.
+* Make sure your client is running as well
+* Enjoy!
+
+## Client Installation Instructions
+https://github.com/KhakiSuitValentino/pod-cats-client
+
+To run Pod Cats on your local machine, first fork and clone this repository. Then follow these steps:
+
+* In your terminal, navigate to the cloned repository. Run the command ```npm -install```  or  ```npm i```
+to install all of the packages needed to run the app.
+
+* You will need to add a local file for functionality. In your terminal in the same location as above, run the following command: ```touch .env.local``` 
+* In the ```.gitignore``` file, add ```.env.local```
+
+* In the ```.env.local``` file, you need to set your router variable. Enter the following:
+ ```
+ REACT_APP_SERVER_URL=http://localhost:8000
+ ``` 
+
+* You're all set! run the command ```npm run start``` in your cloned repository and your client is ready to go.
+* Make sure your server is running as well
+* Enjoy!
 
 
 
@@ -104,14 +138,12 @@ Once our server was up and running, we all worked individually and sometimes as 
 
 
 ## Stretch Goals
-* Allow users to share posts with other users in a feed ???
+* Allow users to share posts with other users in a feed
 * Available Cat adoption?
 * Cat articles, facts (third API)
 * Allow users to comment on cat posts
 * Edit favicon
 * Limited feed of posts, unless users scroll to display additional posts 
 
-## Unsolved Problems
-
-
 ## Major Hurdles
+We ran into several issues as we dove deeper into this group project. The most apparent was getting our front/back ends to pass the correct data between each other. Mob-coding worked extremely well in our group to collaboratively break down and solve our issues with a collective mind. Our confidence grew with each tackled issue and provided some great momentum in what felt like a very fast project week. We're proud to deploy Pod-Cats, and we hope you smile using the application as much as we did developing it!
