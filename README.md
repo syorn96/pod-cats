@@ -1,5 +1,8 @@
 # Pod Cats
 
+## Application Link
+https://silver-beignet-215e62.netlify.app/
+
 ## Project Idea and Descriptions
 
 Pod Cats is a social media and educational application designed for your pet cat. This online application will allow cat owners to post and share pictures of their cute and diabolical best friend. Additionally users will be able to view posts from other cat enthusiasts.
@@ -65,6 +68,22 @@ https://api.thecatapi.com/v1/images/search?limit=10
 ## Wireframes
 ![Components](./public/wireframe-components.png)
 
+## General Approach
+
+As a team, we decided to divide and conquer and use the Miro application to our advantage. Miro allowed us, as a group, to visually display who was working on a specific application component. Additionally, we used daily meetings to set goals and discuss priorities.  We found that effectively communicating contributed to our overall success. 
+
+During the first couple of days Stephen spent a considerable amount of time focusing on the backend and making sure the server would communicate with the front end. Additionally, Devin, Matt and Thomas all contributed to the front end components and stubbing out all the necessary views. 
+
+Once our server was up and running, we all worked individually and sometimes as a team to polish our components in the front end. Reaching MVP took the majority of the time alotted for this project. However, once we reached MVP, we spent the last day working together to learn integrating CSS with both Bootstrap and Tailwind packages.
+
+
+## Installation Instructions
+
+* Server: https://github.com/syorn96/pod-cats-server
+
+
+* Client: https://github.com/KhakiSuitValentino/pod-cats-client
+
 
 
 ## Userstories
@@ -81,7 +100,6 @@ https://api.thecatapi.com/v1/images/search?limit=10
 * Create an account
 * Ability to log in and log out
 * Ability to post pictures of your cat
-* Allow users to comment on cat posts
 * Functioning Routes
 
 
@@ -89,6 +107,11 @@ https://api.thecatapi.com/v1/images/search?limit=10
 * Allow users to share posts with other users in a feed ???
 * Available Cat adoption?
 * Cat articles, facts (third API)
-* Allow users to comment on posts
+* Allow users to comment on cat posts
 * Edit favicon
 * Limited feed of posts, unless users scroll to display additional posts 
+
+## Unsolved Problems
+
+
+## Major Hurdles
