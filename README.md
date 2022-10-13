@@ -2,7 +2,7 @@
 
 ## Project Idea and Descriptions
 
-Pod Cats is a social media and educational application designed for your pet cat. This online application will allow cat owners to post and share pictures of their cute and diabolical best friend. Additionally users will be able to comment on cat posts from other owners, learn about random cat facts and read random cat articles.
+Pod Cats is a social media and educational application designed for your pet cat. This online application will allow cat owners to post and share pictures of their cute and diabolical best friend. Additionally users will be able to view posts from other cat enthusiasts.
 
 ## Choice of API and proof of concept
 
@@ -12,6 +12,11 @@ https://api.thecatapi.com/v1/images/search?limit=10
 
 ## ERDs
 ![Entity Relational Diagrams](./public/project-3-erd.png)
+
+## Application Site
+
+![Website Screenshot of Application](./public/Website1.png)
+![Website Screenshot #2 of Application](./public/Website2.png)
 
 ## Restful Routing Chart
 
@@ -33,16 +38,33 @@ https://api.thecatapi.com/v1/images/search?limit=10
 | Method | URL pattern | Action | Description |
 |:------:|:------:|:------:|:-----------:|
 | GET    | /cats | READ | Render a feed of all (recent) cat posts |
-| GET    | /cats/id/:id | READ | Display specific cat post |
+| GET    | /cats/id/:id | Read | Display specific cat post |
+| DELETE    | /cats/id/:id | Delete | Delete a specific cat post |
 | GET    | /cats/new | READ | Render form for a new cat post |
 | POST   | /cats/new | CREATE | Create a new cat post |
 
 
 ## Techstack
-
+* React (Front-End Framework)
+* Axios (NPM Package to retrieve data from API)
+* React-Router-Dom (Front-End Framework)
+* jwt-decode (Backend token decoder)
+* Bcrypt (Backend, password hasher)
+* Bootstrap (CSS Package)
+* Tailwind (CSS Package)
+* CSS 
+* Javascript
+* MONGODB (Backend Server)
+* Dotenv (Backend Environment)
+* Cors (Middleware for backend and frontend)
+* Node
+* Express (Display backend data through simple html)
+* Rowdy (Server configuration library)
+* Mongoose (Backend Server node module package)
 
 ## Wireframes
 ![Components](./public/wireframe-components.png)
+
 
 
 ## Userstories
